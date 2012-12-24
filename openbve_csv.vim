@@ -27,6 +27,8 @@ syntax keyword cmdsTrack Ground Back Brightness Rail Railtype FreeObj Stop Signa
 
 syntax match cmdDelimiter /,/
 
+syntax region commentRange start=";" end=/[,\n]/
+
 highlight link cmdKeywords Function
 highlight link trackPosition Label
 
@@ -38,4 +40,5 @@ highlight link cmdsStructure Tag
 highlight link cmdsTexture Tag
 highlight link cmdsTrack Tag
 
+highlight link commentRange Comment
 highlight link cmdDelimiter Delimiter
