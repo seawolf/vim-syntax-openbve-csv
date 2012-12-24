@@ -17,7 +17,7 @@ syntax keyword cmdKeywords With
 
 syntax keyword cmdGroups Route Options Train Structure Texture Track
 
-syntax match trackPosition /[0-9]*/
+syntax match trackPosition /[0-9.]*/
 syntax keyword cmdsRoute Comment Guage DeveloperID Change RunInterval Signal contained nextgroup=cmdArgs
 syntax keyword cmdsOptions UnitOfSpeed contained nextgroup=cmdArgs
 syntax keyword cmdsTrain Folder contained nextgroup=cmdArgs
