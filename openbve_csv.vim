@@ -25,7 +25,7 @@ syntax keyword cmdsStructure Ground Rail Beacon FreeObj contained nextgroup=cmdA
 syntax keyword cmdsTexture Background contained nextgroup=cmdArgs
 syntax keyword cmdsTrack Ground Back Brightness Rail Railtype FreeObj Stop Signal SigF Limit Section Curve contained nextgroup=cmdArgs
 
-syntax region cmdRange start=/[\.A-Za-z]/ end=/[,\n]/
+syntax region cmdRange start=/[\.A-Za-z]/ end=/[, ]/ nextgroup=cmdArgs
 syntax region preprocRange start="\$" end=/[,\n]/
 
 syntax match cmdDelimiter /,/
