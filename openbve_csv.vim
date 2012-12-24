@@ -34,7 +34,7 @@ syntax region commentRange start=";" end=/[,\n]/
 
 syntax region cmdArgs start=' ' end="," contained
 
-highlight link cmdKeywords Function
+highlight link cmdKeywords Statement
 highlight link trackPosition Label
 
 highlight link cmdArgs Todo
