@@ -12,3 +12,7 @@ if exists("b:current_syntax")
 endif
 
 syntax case ignore
+
+syntax match cmdDelimiter /,/
+
+highlight link cmdDelimiter Delimiter
