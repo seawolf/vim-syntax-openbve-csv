@@ -32,7 +32,7 @@ syntax match cmdDelimiter /,/
 
 syntax region commentRange start=";" end=/[,\n]/
 
-syntax region cmdArgs start=/[ 0-9A-Za-z]*/ end="," contained
+syntax region cmdArgs start=/[ 0-9A-Za-z]*/ end=/[,\n]/ contained
 
 highlight link cmdKeywords Statement
 highlight link trackPosition Label
