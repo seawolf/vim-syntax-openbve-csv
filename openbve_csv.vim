@@ -24,6 +24,7 @@ syntax keyword cmdsTrain Folder
 syntax keyword cmdsStructure Ground Rail Beacon FreeObj
 syntax keyword cmdsTexture Background
 syntax keyword cmdsTrack Ground Back Brightness Rail Railtype FreeObj Stop Signal SigF Limit Section Curve
+syntax region preprocRange start="\$" end=/[,\n]/
 
 syntax match cmdDelimiter /,/
 
@@ -31,6 +32,8 @@ syntax region commentRange start=";" end=/[,\n]/
 
 highlight link cmdKeywords Function
 highlight link trackPosition Label
+
+highlight link preprocRange Label
 
 highlight link cmdGroups Tag
 highlight link cmdsRoute Tag
