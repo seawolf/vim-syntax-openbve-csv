@@ -13,6 +13,10 @@ endif
 
 syntax case ignore
 
+syntax keyword cmdKeywords With
+
 syntax match cmdDelimiter /,/
+
+highlight link cmdKeywords Function
 
 highlight link cmdDelimiter Delimiter
