@@ -18,12 +18,12 @@ syntax keyword cmdKeywords With
 syntax keyword cmdGroups Route Options Train Structure Texture Track
 
 syntax match trackPosition /[0-9]*/
-syntax keyword cmdsRoute Comment Guage DeveloperID Change RunInterval Signal
-syntax keyword cmdsOptions UnitOfSpeed
-syntax keyword cmdsTrain Folder
-syntax keyword cmdsStructure Ground Rail Beacon FreeObj
-syntax keyword cmdsTexture Background
-syntax keyword cmdsTrack Ground Back Brightness Rail Railtype FreeObj Stop Signal SigF Limit Section Curve
+syntax keyword cmdsRoute Comment Guage DeveloperID Change RunInterval Signal contained nextgroup=cmdArgs
+syntax keyword cmdsOptions UnitOfSpeed contained nextgroup=cmdArgs
+syntax keyword cmdsTrain Folder contained nextgroup=cmdArgs
+syntax keyword cmdsStructure Ground Rail Beacon FreeObj contained nextgroup=cmdArgs
+syntax keyword cmdsTexture Background contained nextgroup=cmdArgs
+syntax keyword cmdsTrack Ground Back Brightness Rail Railtype FreeObj Stop Signal SigF Limit Section Curve contained nextgroup=cmdArgs
 syntax region preprocRange start="\$" end=/[,\n]/
 
 syntax match cmdDelimiter /,/
