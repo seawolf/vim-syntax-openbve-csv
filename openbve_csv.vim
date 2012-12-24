@@ -17,6 +17,7 @@ syntax keyword cmdKeywords With
 
 syntax keyword cmdGroups Route Options Train Structure Texture Track
 
+syntax match trackPosition /[0-9]*/
 syntax keyword cmdsRoute Comment Guage DeveloperID Change RunInterval Signal
 syntax keyword cmdsOptions UnitOfSpeed
 syntax keyword cmdsTrain Folder
@@ -27,6 +28,7 @@ syntax keyword cmdsTrack Ground Back Brightness Rail Railtype FreeObj Stop Signa
 syntax match cmdDelimiter /,/
 
 highlight link cmdKeywords Function
+highlight link trackPosition Label
 
 highlight link cmdGroups Tag
 highlight link cmdsRoute Tag
